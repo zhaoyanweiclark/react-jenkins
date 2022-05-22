@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                echo $AWS_KEY
+                echo ${env.AWS_KEY}
             }
         }
     }
